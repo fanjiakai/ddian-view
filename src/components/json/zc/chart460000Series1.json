@@ -1,0 +1,24 @@
+[
+  {
+    "name": "经营性资产",
+    "type": "bar",
+    "data": [13000,8900,9700,8000],
+    "markPoint": {
+      "data": [
+        {"type": "max", "name": "最大值"},
+        {"type": "min", "name": "最小值"}
+      ]
+    }
+  },
+  {
+    "name": "非经营性资产",
+    "type": "bar",
+    "data": [9500,6700,8200,6800],
+    "markPoint": {
+      "data": [
+        {"type": "max", "name": "最大值"},
+        {"type": "min", "name": "最小值"}
+      ]
+    }
+  }
+]

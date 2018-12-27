@@ -1,0 +1,45 @@
+[{
+  "num":"1",
+  "name": "海口市",
+  "kcwz":"19143",
+  "scqzc":"27137",
+  "lmzc":"17376",
+  "jyxgdzc":"25200",
+  "fjyxgdzc":"12806",
+  "jyxzjgc":"12813",
+  "fjyxzjgc":"15529",
+  "wxzc":"11831"
+}, {
+  "num":"2",
+  "name": "三亚市",
+  "kcwz":"10798",
+  "scqzc":"23053",
+  "lmzc":"15579",
+  "jyxgdzc":"21794",
+  "fjyxgdzc":"27925",
+  "jyxzjgc":"23959",
+  "fjyxzjgc":"20799",
+  "wxzc":"22773"
+}, {
+  "num":"3",
+  "name": "三沙市",
+  "kcwz":"26185",
+  "scqzc":"16591",
+  "lmzc":"16470",
+  "jyxgdzc":"15315",
+  "fjyxgdzc":"23067",
+  "jyxzjgc":"22167",
+  "fjyxzjgc":"20880",
+  "wxzc":"17218"
+}, {
+  "num":"4",
+  "name": "儋州市",
+  "kcwz":"24122",
+  "scqzc":"25439",
+  "lmzc":"28068",
+  "jyxgdzc":"18327",
+  "fjyxgdzc":"20092",
+  "jyxzjgc":"18263",
+  "fjyxzjgc":"22772",
+  "wxzc":"20799"
+}]

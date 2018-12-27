@@ -1,0 +1,56 @@
+
+
+[{
+  "num":"1",
+  "name": "海口市",
+  "zczj":"1000",
+  "fzhsyqyhj":"1850",
+  "ldzchj":"1900",
+  "nyzchj":"1960",
+  "cqzchj":"630",
+  "zczjzchj":"963",
+  "qtzchj":"1963",
+  "ldzchjfzhj":"1630",
+  "cqfzhj":"2480",
+  "syqyhj":"1963"
+}, {
+  "num":"2",
+  "name": "三亚市",
+  "zczj":"800",
+  "fzhsyqyhj":"6000",
+  "ldzchj":"1950",
+  "nyzchj":"2630",
+  "cqzchj":"1260",
+  "zczjzchj":"1300",
+  "qtzchj":"1000",
+  "ldzchjfzhj":"3000",
+  "cqfzhj":"500",
+  "syqyhj":"1963"
+}, {
+  "num":"3",
+  "name": "三沙市", 
+  "zczj":"4000",
+  "fzhsyqyhj":"1500",
+  "ldzchj":"5100",
+  "nyzchj":"1963",
+  "cqzchj":"630",
+  "zczjzchj":"3000",
+  "ldzchjfzhj":"1230",
+  "qtzchj":"1320",
+  "cqfzhj":"1800",
+  "syqyhj":"1963"
+}, {
+  "num":"4",
+  "name": "儋州市",
+  "zczj":"4000",
+  "fzhsyqyhj":"1550",
+  "ldzchj":"1370",
+  "nyzchj":"2680",
+  "cqzchj":"2040",
+  "zczjzchj":"1200",
+  "qtzchj":"1430",
+  "ldzchjfzhj":"1770",
+  "cqfzhj":"2910",
+  "syqyhj":"1963"
+}]
+

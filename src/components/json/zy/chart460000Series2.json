@@ -1,0 +1,35 @@
+[
+  {
+    "name": "农用地",
+    "type": "bar",
+    "data": [58000,34000,52000,38000],
+    "markPoint": {
+      "data": [
+        {"type": "max", "name": "最大值"},
+        {"type": "min", "name": "最小值"}
+      ]
+    }
+  },
+  {
+    "name": "建设用地",
+    "type": "bar",
+    "data": [12000,45000,23500,28370],
+    "markPoint": {
+      "data": [
+        {"type": "max", "name": "最大值"},
+        {"type": "min", "name": "最小值"}
+      ]
+    }
+  },
+  {
+    "name": "未利用地",
+    "type": "bar",
+    "data": [3000,25000,8000,46000],
+    "markPoint": {
+      "data": [
+        {"type": "max", "name": "最大值"},
+        {"type": "min", "name": "最小值"}
+      ]
+    }
+  }
+]
