@@ -14,11 +14,18 @@ export default {
 body{
   padding:0px;
   margin:0px auto;
+  width: 100%;
+  height: 100%;
 }
+/*body {
+  background: #2d3c56;
+}*/
 a{
   text-decoration:none;
 }
 #app {
+  width: 100%;
+  height: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -6,7 +6,7 @@
 export default {
   // baseURL: 'http://192.168.1.65:8002',
   // baseURL: 'http://192.168.1.90:8002',
-  baseURL: 'http://gykj123.cn:3509',
+  baseURL: 'http://localhost:8002',
   // baseURL: 'http://localhost:8002',
   // baseURL: '',
   isDev: true

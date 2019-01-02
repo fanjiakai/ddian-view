@@ -1,18 +1,20 @@
-<template>
-  <el-form ref="AccountFrom" :model="account" :rules="rules" label-position="left" label-width="0px"
-           class="demo-ruleForm login-container">
-    <h3 class="title">农村集体产权制度改革统计分析系统</h3>
-    <el-form-item prop="username">
-      <el-input type="text" v-model="account.username" auto-complete="off" placeholder="账号"></el-input>
-    </el-form-item>
-    <el-form-item prop="pwd">
-      <el-input type="password" v-model="account.pwd" auto-complete="off" placeholder="密码"></el-input>
-    </el-form-item>
-    <!--<el-checkbox v-model="checked" checked class="remember">记住密码</el-checkbox>-->
-    <el-form-item style="width:100%;">
-      <el-button type="primary" style="width:100%;" @click.native.prevent="handleLogin" :loading="loading">登录</el-button>
-    </el-form-item>
-  </el-form>
+<template style="width: 100%;height: 100%;">
+  <div class="login_div">
+    <el-form ref="AccountFrom" :model="account" :rules="rules" label-position="left" label-width="0px"
+             class="demo-ruleForm login-container">
+      <h3 class="title">农村集体产权制度改革统计分析系统</h3>
+      <el-form-item prop="username">
+        <el-input type="text" v-model="account.username" auto-complete="off" placeholder="账号"></el-input>
+      </el-form-item>
+      <el-form-item prop="pwd">
+        <el-input type="password" v-model="account.pwd" auto-complete="off" placeholder="密码"></el-input>
+      </el-form-item>
+      <!--<el-checkbox v-model="checked" checked class="remember">记住密码</el-checkbox>-->
+      <el-form-item style="width:100%;">
+        <el-button type="primary" style="width:100%;" @click.native.prevent="handleLogin" :loading="loading">登录</el-button>
+      </el-form-item>
+    </el-form>
+    </div>
 </template>
 
 <script>
@@ -42,17 +44,22 @@ export default {
   methods: {
     handleLogin() {
       let that = this;
-      that.$router.push({ path: "/" });
-      this.$refs.AccountFrom.validate(valid => {
+      /*console.log(1111111)
+      this.$router.push({ path: "/home" });
+      console.log(22222)*/
+      that.$router.push({name: "home"});
+      /*this.$refs.AccountFrom.validate(valid => {
         if (valid) {
           this.loading = true;
           let loginParams = {
             username: this.account.username,
             pwd: this.account.pwd
           };
-          API.login(loginParams)
+          that.$router.push({name: "/"});
+          /!*API.login(loginParams)
             .then(
               function(result) {
+                console.log(result)
                 that.loading = false;
                 if (result && result.code === 0) {
                   // localStorage.setItem(
@@ -94,26 +101,31 @@ export default {
                 message: "请求出现异常",
                 duration: 2000
               });
-            });
+            });*!/
         }
-      });
+      });*/
     }
   }
 };
 </script>
 <style>
-body {
-  background: #2d3c56;
-}
+
 </style>
 <style lang="scss" scoped>
+  .login_div {
+    width: 100%;
+    height: 100%;
+    background: #2d3c56;
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/-webkit-box-sizing: border-box; /*Safari3.2+*/-o-box-sizing: border-box; /*Opera9.6*/-ms-box-sizing: border-box; /*IE8*/box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+    padding-top: 10%;
+  }
 .login-container {
   /*box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);*/
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   background-clip: padding-box;
-  margin: 160px auto;
+  margin: 0 auto;
   width: 350px;
   padding: 35px 35px 15px 35px;
   background: #fff;

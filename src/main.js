@@ -9,7 +9,7 @@ Vue.prototype.$echarts = echarts
 import layer from 'vue-layer'
 Vue.prototype.$layer = layer(Vue);
 import 'element-ui/lib/theme-chalk/index.css'
-import 'element-ui/lib/theme-chalk/rewrite.css'
+// import 'element-ui/lib/theme-chalk/rewrite.css'
 
 import '@/assets/iconfont.css'
 import '@/assets/styles/main.scss'
