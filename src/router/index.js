@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Index from '@/components/index'
+import Model from '@/components/model/model'
 
 
 
@@ -25,6 +26,10 @@ let router = new Router({
       path: '/',
       name: 'log',
       redirect: { name: 'home' },
+    }, {
+      path: '/model',
+      name: 'model',
+      component: Model
     }
   ]
 });

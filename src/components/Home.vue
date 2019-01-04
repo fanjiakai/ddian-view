@@ -1,16 +1,33 @@
 <template>
   <el-container class="page_main">
-    <el-header class="home_search" height="90px">搜索栏</el-header>
+    <el-header class="home_search" height="90px">
+      <div style="margin-top: 40px;width: 400px;float: right">
+        <el-input placeholder="请输入内容" v-model="search" class="input-with-select" size="small">
+          <el-button slot="append" icon="el-icon-search"></el-button>
+        </el-input>
+      </div>
+    </el-header>
     <el-main>
       <el-container>
         <el-header height="90px" class="home_nav">
-          <div class="home_nav_sign home_nav_left">111</div>
+          <div class="home_nav_sign home_nav_left">logo</div>
           <div class="home_nav_right">
             <ul>
-              <li><button>1111</button></li>
-              <li><button>2222</button></li>
-              <li><button>3333</button></li>
-              <li><button>4444</button></li>
+              <li><button>首页</button></li>
+              <li>
+                <el-dropdown style="width: 100%">
+                  <span class="el-dropdown-link" style="width: 100%">
+                    <button>列表</button>
+                  </span>
+                  <el-dropdown-menu slot="dropdown">
+                    <el-dropdown-item>列表1</el-dropdown-item>
+                    <el-dropdown-item>列表2</el-dropdown-item>
+                    <el-dropdown-item>列表3</el-dropdown-item>
+                  </el-dropdown-menu>
+                </el-dropdown>
+              </li>
+              <li><button>论坛</button></li>
+              <li><button>关于我们</button></li>
             </ul>
           </div>
         </el-header>
@@ -33,7 +50,9 @@
           <div class="boundary_line"></div>
           <el-footer class="home_footer_model" style="height: 100%">
             <el-row>
-              <el-col :span="8"><div class="grid-content bg-purple home_footer_models">模块1</div></el-col>
+              <el-col :span="8"><div class="grid-content bg-purple home_footer_models">
+                <router-link :to="{name: 'model',params: {model: '1'}}">模块1</router-link>
+              </div></el-col>
               <el-col :span="8"><div class="grid-content bg-purple-light home_footer_models">模块2</div></el-col>
               <el-col :span="8"><div class="grid-content bg-purple home_footer_models">模块3</div></el-col>
             </el-row>
@@ -58,6 +77,7 @@
     },
     data() {
       return {
+        search:''
       };
     },
     methods: {
@@ -133,6 +153,16 @@
     font-size: 14px;
     border-radius: 6px;
     cursor: pointer;
+  }
+  .home_nav_right ul li:first-child button{
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+  }
+  .home_nav_right ul li:first-child button:hover{
+    color: #fff;
+    background-color: #0f7aff;
+    border-color: #1385ff;
   }
   .home_main_right{
     padding-left: 30px;
