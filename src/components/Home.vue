@@ -65,14 +65,17 @@
         </el-main>
       </el-container>
     </el-main>
-    <el-footer class="home_footer" height="76px">页脚</el-footer>
+    <!--<el-footer class="home_footer" height="76px">页脚</el-footer>-->
+    <MyFooter></MyFooter>
   </el-container>
 </template>
 
 <script>
   import {bus} from "../bus.js";
+  import MyFooter from "./element/MyFooter";
   export default {
     name: "home",
+    components: {MyFooter},
     created() {
     },
     data() {
@@ -86,7 +89,7 @@
     }
   };
 </script>
-<style scoped>
+<style>
   .el-footer{
     padding: 0;
   }
