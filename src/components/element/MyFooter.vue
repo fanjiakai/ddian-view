@@ -9,5 +9,7 @@
 </script>
 
 <style scoped>
-
+  .home_footer{
+    background-color: #989090;
+  }
 </style>
