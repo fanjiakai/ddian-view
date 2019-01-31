@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Index from '@/components/index'
 import Model from '@/components/model/model'
+import List from '@/components/model/list'
+import Details from '@/components/model/details'
 
 
 
@@ -30,6 +32,14 @@ let router = new Router({
       path: '/model',
       name: 'model',
       component: Model
+    }, {
+      path: '/list',
+      name: 'list',
+      component: List
+    }, {
+      path: '/details',
+      name: 'details',
+      component: Details
     }
   ]
 });
